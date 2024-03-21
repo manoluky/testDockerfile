@@ -1,7 +1,7 @@
 FROM ubuntu:22.04
 # Instalacion de dependencias
 RUN apt-get update \
-    && DEBIAN_FRONTEND=noninteractive apt-get install -y openjdk-17-jdk wget unzip gnupg curl jq git inetutils-traceroute mlocate libnet-ssleay-perl libio-socket-ssl-perl
+    && DEBIAN_FRONTEND=noninteractive apt-get install -y openjdk-17-jdk wget unzip gnupg curl jq git
 # Configuracion variables de entorno Java
 ENV JAVA_HOME='/usr/lib/jvm/java-17-openjdk-amd64'
 ENV PATH=${JAVA_HOME}/bin:${PATH}
