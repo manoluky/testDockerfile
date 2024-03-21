@@ -22,15 +22,15 @@ ENV GRADLE_HOME=/opt/gradle-${GRADLE_VERSION}
 ENV PATH=${GRADLE_HOME}/bin:${PATH}
 
 # Instalacion Google Chrome
-RUN wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_114.0.5735.198-1_amd64.deb \
-  && apt install -y /tmp/chrome.deb \
-  && rm /tmp/chrome.deb
+#RUN wget --no-verbose -O /tmp/chrome.deb https://dl.google.com/linux/chrome/deb/pool/main/g/google-chrome-stable/google-chrome-stable_114.0.5735.198-1_amd64.deb \
+#  && apt install -y /tmp/chrome.deb \
+#  && rm /tmp/chrome.deb
 
 # Instalar Xvfb
-RUN apt-get install -y xvfb
+#RUN apt-get install -y xvfb
 
 # Configurar variables de entorno
-ENV DISPLAY=:10
+#ENV DISPLAY=:10
 
 # Variables de entorno
 ENV RAMA=${RAMA}
